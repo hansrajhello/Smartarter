@@ -63,6 +63,17 @@ void setup() {
 
 void loop() {
   if(digitalRead(slideSwitch)){
+    pot_before=analogRead(pot);
+    takeReadings();
+  }
+}
+void buttonPushed(){
+  var_index=(++var_index)%4;
+  pot_before=analogRead(pot);
+  update_allowed=0;
+}
+void takeReadings(){
+  for(;;){
     for(int i=0; i<35; i++){
       flashDisplay(true);
       updateVariables();
@@ -75,15 +86,10 @@ void loop() {
     }
   }
 }
-void buttonPushed(){
-  var_index=(++var_index)%4;
-  pot_before=analogRead(pot);
-  update_allowed=0;
-}
 void updateVariables(){
   
   int value=analogRead(pot);
-  if((value-pot_before)>20)
+  if(abs(value-pot_before)>20)
     update_allowed=1;
   if(update_allowed==1){
     if(var_index==0)
