@@ -10,7 +10,7 @@
 
 #define slideSwitch A3
 #define pot A2
-#define pushButton A0
+#define pushButton 2
 
 // initializing variables to avoid garbage
 int on_minutes=15, on_hours=1, off_minutes=45, off_hours=2;
@@ -53,6 +53,7 @@ void setup() {
   pinMode(slideSwitch, INPUT);
   pinMode(pot, INPUT);
   pinMode(pushButton, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(pushButton), buttonPushed, RISING);
   
   
   digitalWrite(digitOne, HIGH);
@@ -73,6 +74,9 @@ void loop() {
       Serial.print(var_index); Serial.print(":: "); Serial.print(on_minutes); Serial.print(" "); Serial.print(on_hours); Serial.print(" "); Serial.print(off_minutes); Serial.print(" "); Serial.println(off_hours);
     }
   }
+}
+void buttonPushed(){
+  var_index=(++var_index)%4;
 }
 void updateVariables(){
   int value=analogRead(pot);
