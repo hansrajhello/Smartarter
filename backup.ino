@@ -14,7 +14,7 @@
 
 // initializing variables to avoid garbage
 int on_minutes=15, on_hours=1, off_minutes=45, off_hours=2;
-int var_index=0;
+int var_index=0, pot_before=0, update_allowed=0;
 
 const byte digit_pattern[16] =
 {
@@ -77,17 +77,24 @@ void loop() {
 }
 void buttonPushed(){
   var_index=(++var_index)%4;
+  pot_before=analogRead(pot);
+  update_allowed=0;
 }
 void updateVariables(){
+  
   int value=analogRead(pot);
-  if(var_index==0)
-    on_minutes=map(value, 0, 1023, 0, 59);
-  if(var_index==1)
-    on_hours=map(value, 0, 1023, 0, 9);
-  if(var_index==2)
-    off_minutes=map(value, 0, 1023, 0, 59);
-  if(var_index==3)
-    off_hours=map(value, 0, 1023, 0, 9);
+  if((value-pot_before)>20)
+    update_allowed=1;
+  if(update_allowed==1){
+    if(var_index==0)
+      on_minutes=map(value, 0, 1023, 0, 59);
+    if(var_index==1)
+      on_hours=map(value, 0, 1023, 0, 9);
+    if(var_index==2)
+      off_minutes=map(value, 0, 1023, 0, 59);
+    if(var_index==3)
+      off_hours=map(value, 0, 1023, 0, 9);
+  }
 }
 void flashDisplay(bool state){
   if(state==true){
