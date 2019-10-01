@@ -774,8 +774,6 @@ Wire Wire Line
 	9450 3550 8600 3550
 Wire Wire Line
 	9850 3300 9450 3300
-Wire Wire Line
-	9450 3200 9700 3200
 Text Notes 8600 4100 1    50   ~ 0
 5V
 Text Notes 8450 4000 1    50   ~ 0
@@ -787,12 +785,9 @@ Wire Wire Line
 Connection ~ 8750 3900
 Wire Wire Line
 	8750 3900 8750 4550
-Connection ~ 9700 3200
-Wire Wire Line
-	9700 3200 9850 3200
 Connection ~ 10150 3050
 Wire Wire Line
-	9550 3050 9550 3800
+	9550 3050 9550 3200
 Wire Wire Line
 	9550 3800 8450 3800
 Wire Wire Line
@@ -925,8 +920,6 @@ F 3 "~" H 5100 3200 50  0001 C CNN
 	1    5100 3200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7200 8750 8150 8750
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5D944546
@@ -950,9 +943,6 @@ F 3 "~" H 9250 3050 50  0001 C CNN
 	1    9250 3050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9450 3050 9550 3050
-Connection ~ 9550 3050
 Wire Wire Line
 	9100 3400 9100 2850
 Wire Wire Line
@@ -1096,25 +1086,41 @@ Wire Wire Line
 Wire Wire Line
 	6650 6050 6650 5950
 Wire Wire Line
-	7400 8150 8150 8150
+	7200 8750 8150 8750
 Wire Wire Line
-	7500 8050 8150 8050
+	9700 3200 9850 3200
 Wire Wire Line
-	7300 8250 8150 8250
+	9450 3050 9450 3100
 Wire Wire Line
-	7200 8350 8150 8350
+	9450 3100 9700 3100
 Wire Wire Line
-	7500 8450 8150 8450
+	9700 3100 9700 3200
+Connection ~ 9700 3200
+Wire Wire Line
+	9450 3200 9550 3200
+Wire Wire Line
+	7300 8650 8150 8650
 Wire Wire Line
 	7400 8550 8150 8550
 Wire Wire Line
-	7300 8650 8150 8650
+	7500 8450 8150 8450
+Wire Wire Line
+	7200 8350 8150 8350
+Wire Wire Line
+	7300 8250 8150 8250
+Wire Wire Line
+	7500 8050 8150 8050
+Wire Wire Line
+	7400 8150 8150 8150
 Wire Bus Line
-	8000 7900 8000 8950
-Wire Bus Line
-	8850 7750 8850 8950
+	10750 7950 10750 8950
 Wire Bus Line
 	9750 7750 9750 8950
 Wire Bus Line
-	10750 7950 10750 8950
+	8850 7750 8850 8950
+Wire Bus Line
+	8000 7900 8000 8950
+Connection ~ 9550 3200
+Wire Wire Line
+	9550 3200 9550 3800
 $EndSCHEMATC
