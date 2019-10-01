@@ -173,7 +173,7 @@ U 1 1 5D8C93F5
 P 8000 4950
 F 0 "RV1" H 7930 4996 50  0000 R CNN
 F 1 "R_POT" H 7930 4905 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Omeg_PC16BU_Vertical" H 8000 4950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_Round_P7.5" H 8000 4950 50  0001 C CNN
 F 3 "~" H 8000 4950 50  0001 C CNN
 	1    8000 4950
 	-1   0    0    1   
@@ -184,7 +184,7 @@ U 1 1 5D8CB179
 P 7950 5750
 F 0 "SW1" H 7950 5565 50  0000 C CNN
 F 1 "SW_Push" H 7950 5656 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 7950 5950 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm_Wuerth-430476085716" H 7950 5950 50  0001 C CNN
 F 3 "" H 7950 5950 50  0001 C CNN
 	1    7950 5750
 	0    -1   -1   0   
@@ -332,7 +332,7 @@ U 1 1 5D9434D8
 P 11100 4900
 F 0 "K1" H 11530 4946 50  0000 L CNN
 F 1 "onRelay" H 11530 4855 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5Q-1" H 11550 4850 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_HUGE_32mm" H 11550 4850 50  0001 L CNN
 F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 11750 4750 50  0001 L CNN
 	1    11100 4900
 	1    0    0    -1  
@@ -343,7 +343,7 @@ U 1 1 5D94356C
 P 11100 5800
 F 0 "K2" H 11530 5846 50  0000 L CNN
 F 1 "offRelay" H 11530 5755 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5Q-1" H 11550 5750 50  0001 L CNN
+F 2 "Relay_THT:Relay_SPDT_HUGE_32mm" H 11550 5750 50  0001 L CNN
 F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 11750 5650 50  0001 L CNN
 	1    11100 5800
 	1    0    0    -1  
@@ -427,7 +427,7 @@ U 1 1 5D8CB63C
 P 7950 6300
 F 0 "U3" H 7950 6567 50  0000 C CNN
 F 1 "slideSwitch" H 7950 6476 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 7950 6200 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_6-Pin-Switch_Self_Lock_DPDT_Latching" H 7950 6200 50  0001 C CNN
 F 3 "http://pdf.datasheetcatalog.com/datasheets/70/494502_DS.pdf" H 7950 6300 50  0001 C CNN
 	1    7950 6300
 	1    0    0    -1  
