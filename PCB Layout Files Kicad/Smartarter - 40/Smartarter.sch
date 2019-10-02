@@ -40,8 +40,8 @@ $Comp
 L Device:R R5
 U 1 1 5D8B7CF5
 P 6900 8000
-F 0 "R5" V 6693 8000 50  0000 C CNN
-F 1 "R" V 6784 8000 50  0000 C CNN
+F 0 "R5" V 6900 8000 50  0000 C CNN
+F 1 "R" V 6950 7850 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8000 50  0001 C CNN
 F 3 "~" H 6900 8000 50  0001 C CNN
 	1    6900 8000
@@ -51,8 +51,8 @@ $Comp
 L Device:R R6
 U 1 1 5D8B7D21
 P 6900 8100
-F 0 "R6" V 6693 8100 50  0000 C CNN
-F 1 "R" V 6784 8100 50  0000 C CNN
+F 0 "R6" V 6900 8100 50  0000 C CNN
+F 1 "R" V 6950 7950 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8100 50  0001 C CNN
 F 3 "~" H 6900 8100 50  0001 C CNN
 	1    6900 8100
@@ -62,8 +62,8 @@ $Comp
 L Device:R R7
 U 1 1 5D8B7D3F
 P 6900 8200
-F 0 "R7" V 6693 8200 50  0000 C CNN
-F 1 "R" V 6784 8200 50  0000 C CNN
+F 0 "R7" V 6900 8200 50  0000 C CNN
+F 1 "R" V 6950 8050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8200 50  0001 C CNN
 F 3 "~" H 6900 8200 50  0001 C CNN
 	1    6900 8200
@@ -73,8 +73,8 @@ $Comp
 L Device:R R8
 U 1 1 5D8B7D5F
 P 6900 8300
-F 0 "R8" V 6693 8300 50  0000 C CNN
-F 1 "R" V 6784 8300 50  0000 C CNN
+F 0 "R8" V 6900 8300 50  0000 C CNN
+F 1 "R" V 6950 8150 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8300 50  0001 C CNN
 F 3 "~" H 6900 8300 50  0001 C CNN
 	1    6900 8300
@@ -84,8 +84,8 @@ $Comp
 L Device:R R9
 U 1 1 5D8B7D81
 P 6900 8400
-F 0 "R9" V 6693 8400 50  0000 C CNN
-F 1 "R" V 6784 8400 50  0000 C CNN
+F 0 "R9" V 6900 8400 50  0000 C CNN
+F 1 "R" V 6950 8250 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8400 50  0001 C CNN
 F 3 "~" H 6900 8400 50  0001 C CNN
 	1    6900 8400
@@ -95,8 +95,8 @@ $Comp
 L Device:R R10
 U 1 1 5D8B7DA5
 P 6900 8500
-F 0 "R10" V 6693 8500 50  0000 C CNN
-F 1 "R" V 6784 8500 50  0000 C CNN
+F 0 "R10" V 6900 8500 50  0000 C CNN
+F 1 "R" V 6950 8350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8500 50  0001 C CNN
 F 3 "~" H 6900 8500 50  0001 C CNN
 	1    6900 8500
@@ -106,8 +106,8 @@ $Comp
 L Device:R R11
 U 1 1 5D8B7DCB
 P 6900 8600
-F 0 "R11" V 6693 8600 50  0000 C CNN
-F 1 "R" V 6784 8600 50  0000 C CNN
+F 0 "R11" V 6900 8600 50  0000 C CNN
+F 1 "R" V 6950 8450 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 8600 50  0001 C CNN
 F 3 "~" H 6900 8600 50  0001 C CNN
 	1    6900 8600
@@ -117,8 +117,8 @@ $Comp
 L Device:R R4
 U 1 1 5D8B7DF7
 P 6900 7900
-F 0 "R4" V 6693 7900 50  0000 C CNN
-F 1 "R" V 6784 7900 50  0000 C CNN
+F 0 "R4" V 6900 7900 50  0000 C CNN
+F 1 "R" V 6950 7750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6830 7900 50  0001 C CNN
 F 3 "~" H 6900 7900 50  0001 C CNN
 	1    6900 7900
@@ -157,10 +157,10 @@ Wire Wire Line
 Wire Wire Line
 	7200 8600 7200 8750
 $Comp
-L Device:R_POT RV1
+L Device:R_POT POT1
 U 1 1 5D8C93F5
 P 8000 4950
-F 0 "RV1" H 7930 4996 50  0000 R CNN
+F 0 "POT1" H 7930 4996 50  0000 R CNN
 F 1 "R_POT" H 7930 4905 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alpha_Round_P7.5" H 8000 4950 50  0001 C CNN
 F 3 "~" H 8000 4950 50  0001 C CNN
@@ -210,8 +210,6 @@ Connection ~ 7800 6750
 Wire Wire Line
 	8600 6300 8250 6300
 Wire Wire Line
-	7650 6300 7500 6300
-Wire Wire Line
 	7500 6300 7500 6600
 Connection ~ 8600 5550
 Wire Wire Line
@@ -227,10 +225,10 @@ Wire Wire Line
 	8450 6750 8450 7400
 Connection ~ 8450 6750
 $Comp
-L Device:LED D1
+L Device:LED green1
 U 1 1 5D917BBD
 P 10650 6950
-F 0 "D1" H 10641 7166 50  0000 C CNN
+F 0 "green1" H 10641 7166 50  0000 C CNN
 F 1 "onLED" H 10641 7075 50  0000 C CNN
 F 2 "LED_THT:LED_Rectangular_W3.9mm_H1.8mm" H 10650 6950 50  0001 C CNN
 F 3 "~" H 10650 6950 50  0001 C CNN
@@ -238,10 +236,10 @@ F 3 "~" H 10650 6950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D2
+L Device:LED red1
 U 1 1 5D917C49
 P 10650 6700
-F 0 "D2" H 10641 6916 50  0000 C CNN
+F 0 "red1" H 10641 6916 50  0000 C CNN
 F 1 "offLED" H 10641 6825 50  0000 C CNN
 F 2 "LED_THT:LED_Rectangular_W3.9mm_H1.8mm" H 10650 6700 50  0001 C CNN
 F 3 "~" H 10650 6700 50  0001 C CNN
@@ -249,10 +247,10 @@ F 3 "~" H 10650 6700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D3
+L Device:LED yellow1
 U 1 1 5D917C89
 P 10650 6450
-F 0 "D3" H 10641 6666 50  0000 C CNN
+F 0 "yellow1" H 10641 6666 50  0000 C CNN
 F 1 "otherLED" H 10641 6575 50  0000 C CNN
 F 2 "LED_THT:LED_Rectangular_W3.9mm_H1.8mm" H 10650 6450 50  0001 C CNN
 F 3 "~" H 10650 6450 50  0001 C CNN
@@ -310,10 +308,10 @@ Connection ~ 10900 6700
 Wire Wire Line
 	10900 6700 10900 6950
 $Comp
-L Relay:G5Q-1 K1
+L Relay:G5Q-1 onRelay1
 U 1 1 5D9434D8
 P 11100 4900
-F 0 "K1" H 11530 4946 50  0000 L CNN
+F 0 "onRelay1" H 11530 4946 50  0000 L CNN
 F 1 "onRelay" H 11530 4855 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_HUGE_32mm" H 11550 4850 50  0001 L CNN
 F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 11750 4750 50  0001 L CNN
@@ -321,10 +319,10 @@ F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 11750 4750 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Relay:G5Q-1 K2
+L Relay:G5Q-1 offRelay1
 U 1 1 5D94356C
 P 11100 5800
-F 0 "K2" H 11530 5846 50  0000 L CNN
+F 0 "offRelay1" H 11530 5846 50  0000 L CNN
 F 1 "offRelay" H 11530 5755 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_HUGE_32mm" H 11550 5750 50  0001 L CNN
 F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 11750 5650 50  0001 L CNN
@@ -392,27 +390,9 @@ Wire Wire Line
 Wire Wire Line
 	10900 4600 10900 4400
 Wire Wire Line
-	10900 4400 11750 4400
-Wire Wire Line
-	11750 4400 11750 3050
-Wire Wire Line
-	11750 4400 11750 5400
-Wire Wire Line
 	11750 5400 10900 5400
 Wire Wire Line
 	10900 5400 10900 5500
-Connection ~ 11750 4400
-$Comp
-L Analog_Switch:DG308AxJ U3
-U 1 1 5D8CB63C
-P 7950 6300
-F 0 "U3" H 7950 6567 50  0000 C CNN
-F 1 "slideSwitch" H 7950 6476 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_6-Pin-Switch_Self_Lock_DPDT_Latching" H 7950 6200 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheets/70/494502_DS.pdf" H 7950 6300 50  0001 C CNN
-	1    7950 6300
-	1    0    0    -1  
-$EndComp
 Wire Bus Line
 	8000 8950 8850 8950
 Wire Bus Line
@@ -614,18 +594,16 @@ Wire Wire Line
 Wire Wire Line
 	6350 7900 6750 7900
 $Comp
-L 74xx_IEEE:74164 U1
+L 74xx_IEEE:74164 U74164
 U 1 1 5DB55DEC
 P 5800 7800
-F 0 "U1" H 5800 8366 50  0000 C CNN
+F 0 "U74164" H 5800 8366 50  0000 C CNN
 F 1 "74164" H 5800 8275 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 5800 7800 50  0001 C CNN
 F 3 "" H 5800 7800 50  0001 C CNN
 	1    5800 7800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 7650 5250 7650
 Wire Wire Line
 	5250 7800 5100 7800
 Wire Wire Line
@@ -646,10 +624,6 @@ Wire Wire Line
 Connection ~ 5100 7550
 Wire Wire Line
 	5100 7550 5100 7300
-Wire Wire Line
-	4900 7050 4900 7900
-Wire Wire Line
-	4900 7900 5250 7900
 $Comp
 L Display_Character:KCSA02-107 U2
 U 1 1 5DCB2C82
@@ -659,17 +633,6 @@ F 1 "KCSA02-107" H 8450 8926 50  0000 C CNN
 F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 8450 7750 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-107(Ver.10A).pdf" H 7950 8825 50  0001 L CNN
 	1    8450 8350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Display_Character:KCSA02-107 U5
-U 1 1 5DCB2EF5
-P 9300 8350
-F 0 "U5" H 9300 9017 50  0000 C CNN
-F 1 "KCSA02-107" H 9300 8926 50  0000 C CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 9300 7750 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-107(Ver.10A).pdf" H 8800 8825 50  0001 L CNN
-	1    9300 8350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -793,10 +756,10 @@ Wire Wire Line
 Wire Wire Line
 	9550 3050 10150 3050
 $Comp
-L 74xx_IEEE:7414 U4
+L 74xx_IEEE:7414 U7414
 U 1 1 5DA8142A
 P 7200 5200
-F 0 "U4" V 6900 5000 50  0000 L CNN
+F 0 "U7414" V 6900 5000 50  0000 L CNN
 F 1 "7414" V 6900 5250 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 7200 5200 50  0001 C CNN
 F 3 "" H 7200 5200 50  0001 C CNN
@@ -877,8 +840,6 @@ Connection ~ 8000 4700
 Wire Wire Line
 	8000 4700 8600 4700
 Wire Wire Line
-	5000 7650 5000 6900
-Wire Wire Line
 	11750 5400 11750 6700
 Wire Wire Line
 	11750 6700 10900 6700
@@ -952,10 +913,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 2900 8750 2900
 Wire Wire Line
-	4550 3400 5800 3400
-Wire Wire Line
 	6050 4300 8600 4300
-Connection ~ 5800 3400
 Wire Wire Line
 	5800 3400 9100 3400
 Wire Wire Line
@@ -1015,7 +973,7 @@ F 1 "INDUCTOR" V 12045 5278 50  0000 L CNN
 F 2 "Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC" H 12000 5200 50  0001 C CNN
 F 3 "" H 12000 5200 50  0001 C CNN
 	1    12000 5200
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C_Small C2
@@ -1100,8 +1058,6 @@ Connection ~ 9550 3200
 Wire Wire Line
 	9550 3200 9550 3800
 Wire Wire Line
-	7200 8750 8150 8750
-Wire Wire Line
 	5650 5150 6900 5150
 Wire Wire Line
 	6900 5150 6900 4650
@@ -1113,6 +1069,218 @@ Wire Wire Line
 	6900 6300 6900 5450
 Wire Wire Line
 	6900 5450 6650 5450
+Connection ~ 7500 6300
+Wire Wire Line
+	8800 7550 6300 7550
+Wire Wire Line
+	6300 7550 6300 7100
+Wire Wire Line
+	6300 7100 5200 7100
+Wire Wire Line
+	5200 7100 5200 5550
+Wire Wire Line
+	5200 5550 5650 5550
+Wire Wire Line
+	5550 5250 5650 5250
+Wire Wire Line
+	5550 5450 5650 5450
+$Comp
+L power:GND #PWR02
+U 1 1 5D9AA8D0
+P 10900 4400
+F 0 "#PWR02" H 10900 4150 50  0001 C CNN
+F 1 "GND" H 10905 4227 50  0000 C CNN
+F 2 "" H 10900 4400 50  0001 C CNN
+F 3 "" H 10900 4400 50  0001 C CNN
+	1    10900 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11750 3050 11750 4400
+Wire Wire Line
+	10900 4400 11750 4400
+Connection ~ 11750 4400
+Text Label 5250 7650 2    50   ~ 0
+CLK
+Text Label 11500 8750 0    50   ~ 0
+D4
+Text Label 8750 8650 0    50   ~ 0
+D1
+Text Label 5650 5550 0    50   ~ 0
+D1
+Text Label 5650 5350 0    50   ~ 0
+D4
+$Comp
+L Switch:SW_DPDT_x2 SW2
+U 1 1 5D95FFDE
+P 7950 6250
+F 0 "SW2" H 7950 6575 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 7850 6400 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_6-Pin-Switch_Self_Lock_DPDT_Latching" H 7950 6250 50  0001 C CNN
+F 3 "" H 7950 6250 50  0001 C CNN
+	1    7950 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW2
+U 2 1 5D960079
+P 7950 6300
+F 0 "SW2" H 7950 6625 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 7850 6500 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_6-Pin-Switch_Self_Lock_DPDT_Latching" H 7950 6300 50  0001 C CNN
+F 3 "" H 7950 6300 50  0001 C CNN
+	2    7950 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 8750 8150 8750
+Wire Wire Line
+	7500 6300 7750 6300
+Wire Wire Line
+	8250 6300 8250 6350
+Wire Wire Line
+	8250 6350 8150 6350
+Wire Wire Line
+	8150 6350 8150 6400
+Connection ~ 8150 6350
+Wire Wire Line
+	8150 6200 8150 6150
+Wire Wire Line
+	7750 6300 7750 6250
+Connection ~ 7750 6300
+Wire Wire Line
+	8750 8650 8800 8650
+Wire Wire Line
+	8800 8650 8800 7550
+Wire Wire Line
+	11750 4400 11750 5400
+Wire Wire Line
+	5650 4850 4750 4850
+Wire Wire Line
+	4750 4850 4750 6850
+Wire Wire Line
+	10050 6450 9950 6450
+Wire Wire Line
+	9950 6450 9950 6850
+Wire Wire Line
+	10050 6700 10000 6700
+Wire Wire Line
+	10000 6700 10000 6900
+Wire Wire Line
+	10000 6900 4850 6900
+Wire Wire Line
+	4850 6900 4850 4950
+Wire Wire Line
+	4850 4950 5650 4950
+Wire Wire Line
+	4750 6850 9950 6850
+Wire Wire Line
+	10050 6950 4950 6950
+Wire Wire Line
+	4950 6950 4950 5050
+Wire Wire Line
+	4950 5050 5650 5050
+Text Label 10050 6450 0    50   ~ 0
+otherLed
+Text Label 10050 6700 0    50   ~ 0
+offLed
+Text Label 10050 6950 0    50   ~ 0
+onLed
+Text Label 7200 4650 0    50   ~ 0
+pushButton
+Text Label 6650 5450 0    50   ~ 0
+slideSwitch
+Text Label 6650 5550 0    50   ~ 0
+pot
+Text Label 7850 4950 0    50   ~ 0
+pot
+Text Label 6650 5950 0    50   ~ 0
+monitor
+Text Label 5250 7900 2    50   ~ 0
+data
+Text Label 6650 5650 0    50   ~ 0
+data
+Text Label 6650 5750 0    50   ~ 0
+CLK
+$Comp
+L connectors:HEADER-1x01 digit2.1
+U 1 1 5DA4CDFB
+P 5400 5250
+F 0 "digit2.1" H 5369 5038 60  0000 C CNB
+F 1 "HEADER-1x01" H 5369 5129 40  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5250 5225 60  0001 C CNN
+F 3 "" H 5350 5325 60  0001 C CNN
+F 4 "-" H 5350 5450 40  0001 L BNN "Part"
+F 5 "Connector" H 5350 5550 40  0001 L BNN "Family"
+	1    5400 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L connectors:HEADER-1x01 digit3.1
+U 1 1 5DA4CEF7
+P 5400 5450
+F 0 "digit3.1" H 5369 5238 60  0000 C CNB
+F 1 "HEADER-1x01" H 5369 5329 40  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5250 5425 60  0001 C CNN
+F 3 "" H 5350 5525 60  0001 C CNN
+F 4 "-" H 5350 5650 40  0001 L BNN "Part"
+F 5 "Connector" H 5350 5750 40  0001 L BNN "Family"
+	1    5400 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L connectors:HEADER-1x01 digit2
+U 1 1 5DA4CFD7
+P 9600 8400
+F 0 "digit2" V 9607 8317 60  0000 R CNB
+F 1 "HEADER-1x01" V 9516 8317 40  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 9450 8375 60  0001 C CNN
+F 3 "" H 9550 8475 60  0001 C CNN
+F 4 "-" H 9550 8600 40  0001 L BNN "Part"
+F 5 "Connector" H 9550 8700 40  0001 L BNN "Family"
+	1    9600 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L connectors:HEADER-1x01 digit3
+U 1 1 5DA4D20E
+P 10500 8400
+F 0 "digit3" V 10507 8317 60  0000 R CNB
+F 1 "HEADER-1x01" V 10416 8317 40  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 10350 8375 60  0001 C CNN
+F 3 "" H 10450 8475 60  0001 C CNN
+F 4 "-" H 10450 8600 40  0001 L BNN "Part"
+F 5 "Connector" H 10450 8700 40  0001 L BNN "Family"
+	1    10500 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 8750 10550 8750
+Wire Wire Line
+	10550 8750 10550 8550
+Wire Wire Line
+	10550 8550 10500 8550
+Wire Wire Line
+	9600 8750 9650 8750
+Wire Wire Line
+	9650 8750 9650 8550
+Wire Wire Line
+	9650 8550 9600 8550
+$Comp
+L Display_Character:KCSA02-107 U5
+U 1 1 5DCB2EF5
+P 9300 8350
+F 0 "U5" H 9300 9017 50  0000 C CNN
+F 1 "KCSA02-107" H 9300 8926 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 9300 7750 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-107(Ver.10A).pdf" H 8800 8825 50  0001 L CNN
+	1    9300 8350
+	1    0    0    -1  
+$EndComp
+Text Label 6650 5850 0    50   ~ 0
+buzz
+Text Label 4950 3200 2    50   ~ 0
+buzz
 Wire Wire Line
 	7300 8650 8150 8650
 Wire Wire Line
@@ -1128,12 +1296,11 @@ Wire Wire Line
 Wire Wire Line
 	7400 8150 8150 8150
 Wire Bus Line
-	8000 7900 8000 8950
-Wire Bus Line
-	8850 7750 8850 8950
+	10750 7950 10750 8950
 Wire Bus Line
 	9750 7750 9750 8950
 Wire Bus Line
-	10750 7950 10750 8950
-Connection ~ 7500 6300
+	8850 7750 8850 8950
+Wire Bus Line
+	8000 7900 8000 8950
 $EndSCHEMATC
