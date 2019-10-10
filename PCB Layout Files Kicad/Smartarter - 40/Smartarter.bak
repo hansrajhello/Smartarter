@@ -179,10 +179,10 @@ F 3 "" H 7950 5950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R 10K1
+L Device:R R21
 U 1 1 5D8CB201
 P 8250 5550
-F 0 "10K1" V 8043 5550 50  0000 C CNN
+F 0 "R21" V 8043 5550 50  0000 C CNN
 F 1 "R" V 8134 5550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8180 5550 50  0001 C CNN
 F 3 "~" H 8250 5550 50  0001 C CNN
@@ -780,10 +780,10 @@ Connection ~ 8450 5950
 Wire Wire Line
 	8450 5950 8450 6750
 $Comp
-L Device:R 1K1
+L Device:R R20
 U 1 1 5DAB5CF5
 P 7750 5550
-F 0 "1K1" V 7543 5550 50  0000 C CNN
+F 0 "R20" V 7543 5550 50  0000 C CNN
 F 1 "R" V 7634 5550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7680 5550 50  0001 C CNN
 F 3 "~" H 7750 5550 50  0001 C CNN
@@ -845,10 +845,10 @@ Wire Wire Line
 	11750 6700 10900 6700
 Connection ~ 11750 5400
 $Comp
-L Device:R 10K3
+L Device:R R19
 U 1 1 5DBF2382
 P 9350 4750
-F 0 "10K3" V 9143 4750 50  0000 C CNN
+F 0 "R19" V 9143 4750 50  0000 C CNN
 F 1 "R" V 9234 4750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9280 4750 50  0001 C CNN
 F 3 "~" H 9350 4750 50  0001 C CNN
@@ -858,10 +858,10 @@ $EndComp
 Wire Wire Line
 	9550 4900 9350 4900
 $Comp
-L Device:R 10K2
+L Device:R R18
 U 1 1 5DBFC37B
 P 9200 5650
-F 0 "10K2" V 8993 5650 50  0000 C CNN
+F 0 "R18" V 8993 5650 50  0000 C CNN
 F 1 "R" V 9084 5650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9130 5650 50  0001 C CNN
 F 3 "~" H 9200 5650 50  0001 C CNN
@@ -884,15 +884,14 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5D944546
-P 9250 3300
-F 0 "J2" H 9170 2975 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 9170 3066 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9250 3300 50  0001 C CNN
-F 3 "~" H 9250 3300 50  0001 C CNN
-	1    9250 3300
-	-1   0    0    1   
+P 9350 3200
+F 0 "J2" H 9270 2875 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 9270 2966 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9350 3200 50  0001 C CNN
+F 3 "~" H 9350 3200 50  0001 C CNN
+	1    9350 3200
+	1    0    0    -1  
 $EndComp
-Connection ~ 9450 3300
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5D94463A
@@ -914,8 +913,6 @@ Wire Wire Line
 	5800 2900 8750 2900
 Wire Wire Line
 	6050 4300 8600 4300
-Wire Wire Line
-	5800 3400 9100 3400
 Wire Wire Line
 	8750 3900 9700 3900
 Wire Wire Line
@@ -940,8 +937,6 @@ Wire Wire Line
 Wire Wire Line
 	9700 3100 9700 3200
 Connection ~ 9700 3200
-Wire Wire Line
-	9450 3200 9550 3200
 Connection ~ 9550 3200
 Wire Wire Line
 	9550 3200 9550 3800
@@ -1089,10 +1084,10 @@ data
 Text Label 6650 5750 0    50   ~ 0
 CLK
 $Comp
-L connectors:HEADER-1x01 digit2.1
+L connectors:HEADER-1x01 d2.1
 U 1 1 5DA4CDFB
 P 5400 5250
-F 0 "digit2.1" H 5369 5038 60  0000 C CNB
+F 0 "d2.1" H 5369 5038 60  0000 C CNB
 F 1 "HEADER-1x01" H 5369 5129 40  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5250 5225 60  0001 C CNN
 F 3 "" H 5350 5325 60  0001 C CNN
@@ -1102,10 +1097,10 @@ F 5 "Connector" H 5350 5550 40  0001 L BNN "Family"
 	-1   0    0    1   
 $EndComp
 $Comp
-L connectors:HEADER-1x01 digit3.1
+L connectors:HEADER-1x01 d3.1
 U 1 1 5DA4CEF7
 P 5400 5450
-F 0 "digit3.1" H 5369 5238 60  0000 C CNB
+F 0 "d3.1" H 5369 5238 60  0000 C CNB
 F 1 "HEADER-1x01" H 5369 5329 40  0000 C CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5250 5425 60  0001 C CNN
 F 3 "" H 5350 5525 60  0001 C CNN
@@ -1115,10 +1110,10 @@ F 5 "Connector" H 5350 5750 40  0001 L BNN "Family"
 	-1   0    0    1   
 $EndComp
 $Comp
-L connectors:HEADER-1x01 digit2
+L connectors:HEADER-1x01 d2
 U 1 1 5DA4CFD7
 P 9600 8400
-F 0 "digit2" V 9607 8317 60  0000 R CNB
+F 0 "d2" V 9607 8317 60  0000 R CNB
 F 1 "HEADER-1x01" V 9516 8317 40  0000 R CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 9450 8375 60  0001 C CNN
 F 3 "" H 9550 8475 60  0001 C CNN
@@ -1128,10 +1123,10 @@ F 5 "Connector" H 9550 8700 40  0001 L BNN "Family"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L connectors:HEADER-1x01 digit3
+L connectors:HEADER-1x01 d3
 U 1 1 5DA4D20E
 P 10500 8400
-F 0 "digit3" V 10507 8317 60  0000 R CNB
+F 0 "d3" V 10507 8317 60  0000 R CNB
 F 1 "HEADER-1x01" V 10416 8317 40  0000 R CNN
 F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 10350 8375 60  0001 C CNN
 F 3 "" H 10450 8475 60  0001 C CNN
@@ -1167,8 +1162,6 @@ Text Label 6650 5850 0    50   ~ 0
 buzz
 Text Label 4950 3200 2    50   ~ 0
 buzz
-Wire Wire Line
-	7200 8750 8150 8750
 $Comp
 L Transistor_BJT:BC547 Q6
 U 1 1 5D9FED94
@@ -1311,6 +1304,17 @@ Wire Wire Line
 Wire Wire Line
 	11150 3100 11150 2650
 Connection ~ 11950 3100
+Text Label 11150 2650 0    50   ~ 0
+monitor
+Wire Wire Line
+	5800 3400 9100 3400
+Wire Wire Line
+	9150 3200 9550 3200
+Wire Wire Line
+	9150 3300 9450 3300
+Connection ~ 9450 3300
+Wire Wire Line
+	7200 8750 8150 8750
 Wire Wire Line
 	7400 8150 8150 8150
 Wire Wire Line
@@ -1333,6 +1337,12 @@ Wire Bus Line
 	8850 7750 8850 8950
 Wire Bus Line
 	8000 7900 8000 8950
-Text Label 11150 2650 0    50   ~ 0
-monitor
+Text Label 9200 5500 0    50   ~ 0
+offRelay
+Text Label 5650 5950 2    50   ~ 0
+offRelay
+Text Label 9350 4600 0    50   ~ 0
+onRelay
+Text Label 5650 6050 2    50   ~ 0
+onRelay
 $EndSCHEMATC
