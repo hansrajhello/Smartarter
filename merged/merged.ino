@@ -1,16 +1,23 @@
+#define clockPin 4
 #define latchPin 6
-#define clockPin 5
-#define dataPin 7
-#define digitOne 4
-#define digitTwo 3
-#define digitThree A1
-#define onLed 13
-#define offLed 12
-#define otherLed 11
+#define dataPin 3
+#define digitOne 6
+#define digitTwo 7
+#define digitThree 8
+#define digitFour 5
+#define onLed 12
+#define offLed 13
+#define otherLed A0
 
-#define slideSwitch A3
-#define pot A2
+#define onRelay 11
+#define offRelay 9
+#define buzzer 10
+
+
+#define slideSwitch A1
+#define pot A7
 #define pushButton 2
+#define monitorPin A2
 
 // initializing variables to avoid garbage
 int on_minutes=15, on_hours=1, off_minutes=45, off_hours=2;
@@ -40,8 +47,8 @@ const byte digit_pattern[16] =
 void setup() {
   Serial.begin(9600);
   
-  pinMode(latchPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
+  pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
   pinMode(digitOne, OUTPUT);
   pinMode(digitTwo, OUTPUT);
@@ -52,24 +59,26 @@ void setup() {
   
   pinMode(slideSwitch, INPUT);
   pinMode(pot, INPUT);
+  pinMode(monitorPin, INPUT);
   pinMode(pushButton, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(pushButton), buttonPushed, RISING);
   
   
-  digitalWrite(digitOne, HIGH);
-  digitalWrite(digitTwo, HIGH);
-  digitalWrite(digitThree, HIGH);
+  deActivate();
+
+  digitalWrite(onRelay, LOW);
+  digitalWrite(offRelay, LOW);
+  digitalWrite(buzzer, LOW);
 }
 
 void loop() {
-  if(digitalRead(slideSwitch)){
+//  if(digitalRead(slideSwitch)){
     pot_before=analogRead(pot);
     takeReadings();
-  }
-  if(!digitalRead(slideSwitch)){
-    pot_before=analogRead(pot);
-    takeReadings();
-  }
+//  }
+//  if(!digitalRead(slideSwitch)){
+//    kamPeLagBsdK();
+//  }
 }
 void buttonPushed(){
   var_index=(++var_index)%4;
@@ -77,7 +86,7 @@ void buttonPushed(){
   update_allowed=0;
 }
 void takeReadings(){
-  for(;;){
+  while(!digitalRead(slideSwitch)){
     for(int i=0; i<35; i++){
       flashDisplay(true);
       updateVariables();
@@ -187,32 +196,116 @@ void showDigit(int value, int index, bool includeDP){
     outputBits = outputBits | B10000000; // perform a bitwise OR to include decimal point
   deActivate();
   digitalWrite(latchPin, LOW);
-  shiftOut(dataPin, clockPin, MSBFIRST, outputBits);  // shiftOut takes the byte, performs SIPO on the shift register
+  shiftOut(dataPin, clockPin, MSBFIRST, ~outputBits);  // shiftOut takes the byte, performs SIPO on the shift register
   digitalWrite(latchPin, HIGH);
   activateDigit(index);
 }
 void activateDigit(int index){
   if(index==1){
-    digitalWrite(digitOne, LOW);
-    digitalWrite(digitTwo, HIGH);
-    digitalWrite(digitThree, HIGH);
-  }
-  else if(index==2){
     digitalWrite(digitOne, HIGH);
     digitalWrite(digitTwo, LOW);
-    digitalWrite(digitThree, HIGH);
+    digitalWrite(digitThree, LOW);
   }
-  else if(index==3){
-    digitalWrite(digitOne, HIGH);
+  else if(index==2){
+    digitalWrite(digitOne, LOW);
     digitalWrite(digitTwo, HIGH);
     digitalWrite(digitThree, LOW);
+  }
+  else if(index==3){
+    digitalWrite(digitOne, LOW);
+    digitalWrite(digitTwo, LOW);
+    digitalWrite(digitThree, HIGH);
   }
   else{
     ;
   }
 }
 void deActivate(){
-  digitalWrite(digitOne, HIGH);
-  digitalWrite(digitTwo, HIGH);
-  digitalWrite(digitThree, HIGH);
+  digitalWrite(digitOne, LOW);
+  digitalWrite(digitTwo, LOW);
+  digitalWrite(digitThree, LOW);
+}
+
+void kamPeLagBsdK(){
+    int offReading=analogRead(monitorPin);
+    Serial.print("switching ON in 10 ");
+    delay(1000);
+    Serial.print("9 ");
+    delay(1000);
+    Serial.print("8 ");
+    delay(1000);
+    Serial.print("6 ");
+    delay(1000);
+    Serial.print("5 ");
+  	delay(1000);
+    Serial.print("4 ");
+    delay(1000);
+    Serial.print("3 ");
+    delay(1000);
+    Serial.print("2 ");
+    delay(1000);
+    Serial.println("1 ");
+    delay(1000);
+    Serial.println("############# GO #############");
+
+    PUMP_ON();
+    int onDelay=on_hours*60+on_minutes;
+    while(onDelay>0){
+        int j=analogRead(monitorPin)+20;
+        if(j>=offReading){
+            BUZZ();
+        }
+      Serial.print("onDelay = ");
+      Serial.println(onDelay);
+      
+        onDelay--;
+        delay(1000);
+      if(digitalRead(slideSwitch))
+        break;
+    }
+    PUMP_OFF();
+    // int offDelay=off_hours*3600+off_minutes*60;
+    int offDelay=off_hours*60+off_minutes;
+    while(offDelay>0){
+      Serial.print("offDelay = ");
+      Serial.println(offDelay);
+      
+        offDelay--;
+        delay(1000);
+      if(digitalRead(slideSwitch))
+        break;
+    }
+}
+
+void PUMP_ON(){
+  Serial.println("PUMP_ON();");
+  delay(1000);
+  digitalWrite(onRelay, HIGH);
+  delay(1000);
+  digitalWrite(onRelay, LOW);
+  digitalWrite(offLed, LOW);
+  digitalWrite(onLed, HIGH);  
+}
+void PUMP_OFF(){
+  Serial.println("PUMP_OFF();");
+  delay(1000);
+  digitalWrite(offRelay, HIGH);
+  delay(1000);
+  digitalWrite(offRelay, LOW);
+  digitalWrite(offLed, HIGH);  
+  digitalWrite(onLed, LOW);
+}
+void BUZZ(){
+  Serial.println("BUZZ();");
+  delay(1000);
+  digitalWrite(onLed, LOW);
+  digitalWrite(offLed, HIGH);
+  for(;;){
+    digitalWrite(buzzer, HIGH);
+    digitalWrite(otherLed, LOW);
+    delay(200);
+    digitalWrite(otherLed, HIGH);
+    digitalWrite(buzzer, LOW);
+    delay(100);
+  }
 }
