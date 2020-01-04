@@ -63,36 +63,24 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Blinking ON LED");
-  digitalWrite(onLed, HIGH);
-  delay(1000);
-  digitalWrite(onLed, LOW);
-  delay(100);
-  Serial.println("Blinking OFF LED");
-  digitalWrite(offLed, HIGH);
-  delay(1000);
-  digitalWrite(offLed, LOW);
-  delay(100);
-  Serial.println("Blinking YELLOW LED");
-  digitalWrite(otherLed, HIGH);
-  delay(1000);
-  digitalWrite(otherLed, LOW);
-  delay(100);
-  Serial.println("ON RELAY");
-  digitalWrite(onRelay, HIGH);
-  delay(1000);
-  digitalWrite(onRelay, LOW);
-  delay(100);
-  Serial.println("OFF RELAY");
-  digitalWrite(offRelay, HIGH);
-  delay(1000);
-  digitalWrite(offRelay, LOW);
-  delay(100);
-  Serial.println("BUZZER");
-  digitalWrite(buzzer, HIGH);
-  delay(1000);
-  digitalWrite(buzzer, LOW);
-  delay(100);
+  for (int i=0; i<10; i++)
+  {
+    byte outputBits = digit_pattern[i];
+    deActivate();
+    shiftOut(dataPin, clockPin, MSBFIRST, ~outputBits);  // shiftOut takes the byte, performs SIPO on the shift register
+    digitalWrite(digitOne, HIGH);
+    delay(500);
+    digitalWrite(digitOne, LOW);
+    digitalWrite(digitTwo, HIGH);
+    delay(500);
+    digitalWrite(digitTwo, LOW);
+    digitalWrite(digitThree, HIGH);
+    delay(500);
+    digitalWrite(digitThree, LOW);
+    digitalWrite(digitFour, HIGH);
+    delay(500);
+    digitalWrite(digitFour, LOW);
+  }
 }
 
 void deActivate(){
